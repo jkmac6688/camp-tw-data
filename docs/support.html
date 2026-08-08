@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>支援｜露營安心查</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f7f7f5;
+    --fg: #1c1c1e;
+    --muted: #6b6b6f;
+    --card: #ffffff;
+    --border: #e2e2e0;
+    --accent: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --fg: #f2f2f2;
+      --muted: #a0a0a5;
+      --card: #1c1c1e;
+      --border: #303032;
+      --accent: #6fcf97;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.75;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    border-left: 4px solid var(--accent);
+    padding-left: 0.6rem;
+  }
+  p { margin: 0.75rem 0; }
+  ul { margin: 0.75rem 0; padding-left: 1.4rem; }
+  li { margin: 0.5rem 0; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.25rem 0;
+  }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>支援</h1>
+
+  <div class="card">
+    露營安心查把交通部觀光署公開的全台露營場合法性資料整理成一張地圖，
+    出發露營前先查這個營地符不符合相關法規。
+  </div>
+
+  <h2>常見問題</h2>
+
+  <p><strong>為什麼有些營地沒有地圖標記？</strong><br>
+  官方資料裡有 70 家營地缺座標，這些營地仍然可以透過搜尋找到，
+  詳情頁會提供「用地址搜尋地圖」的替代方案。</p>
+
+  <p><strong>沒有網路的時候可以用嗎？</strong><br>
+  可以。全台 1,807 家露營場的資料都內建在 App 裡，離線也能完整查詢、搜尋、看地圖。
+  App 只有在有網路時才會嘗試背景更新資料，失敗也不影響離線使用。</p>
+
+  <p><strong>「官方另註記」跟「官方未載明違反項目」是什麼意思？</strong><br>
+  這是我們刻意保留的兩種誠實例外：有些營地在合法名單中，但官方資料仍附註了法規事項，
+  我們標示為「官方另註記」而不是直接算違規；有些營地標示違規卻沒有寫明具體法規，
+  我們寫「官方未載明違反項目」而不是留白猜測。合法性最終認定以主管機關公告為準。</p>
+
+  <p><strong>資料多久更新一次？</strong><br>
+  App 會嘗試自動抓取最新的公開資料；資料本身的來源是交通部觀光署，更新頻率取決於
+  官方公告的時間。App 內「關於資料」分頁會顯示目前資料的「官方資料日期」與
+  「最後同步時間」。</p>
+
+  <h2>回報問題</h2>
+  <p>
+    發現資料有誤、App 有 bug，或有其他建議，歡迎透過 email 聯繫：
+    <a href="mailto:jk200e@gmail.com">jk200e@gmail.com</a>。
+  </p>
+
+  <h2>資料來源</h2>
+  <p>
+    資料來源：交通部觀光署「全台露營場資料」，依政府資料開放授權條款第 1 版使用。
+    本應用程式非政府官方軟體，實際合法性狀態請以主管機關最新公告為準：
+    <a href="https://camp.tad.gov.tw/CMZ/legal.jsp" target="_blank" rel="noopener">交通部觀光署官方查詢</a>。
+    整理後的原始資料檔公開於
+    <a href="https://github.com/jkmac6688/camp-tw-data">camp-tw-data</a>。
+  </p>
+
+  <footer>
+    露營安心查（CampSafe）· <a href="./index.html">隱私權政策</a>
+  </footer>
+</main>
+</body>
+</html>

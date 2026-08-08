@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隱私權政策｜露營安心查</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f7f7f5;
+    --fg: #1c1c1e;
+    --muted: #6b6b6f;
+    --card: #ffffff;
+    --border: #e2e2e0;
+    --accent: #2f7d4f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --fg: #f2f2f2;
+      --muted: #a0a0a5;
+      --card: #1c1c1e;
+      --border: #303032;
+      --accent: #6fcf97;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.75;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    border-left: 4px solid var(--accent);
+    padding-left: 0.6rem;
+  }
+  p { margin: 0.75rem 0; }
+  ul { margin: 0.75rem 0; padding-left: 1.4rem; }
+  li { margin: 0.5rem 0; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.25rem 0;
+  }
+  .summary {
+    font-size: 1.05rem;
+  }
+  a { color: var(--accent); }
+  code {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.1rem 0.35rem;
+    font-size: 0.9em;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>隱私權政策</h1>
+  <p class="updated">露營安心查（CampSafe）｜最後更新：2026-08-08</p>
+
+  <div class="card summary">
+    這個 App <strong>不蒐集任何個人資料</strong>。沒有帳號、沒有登入、沒有分析或
+    廣告追蹤工具，也不會讀取你的裝置定位。以下逐項說明 App 實際的資料處理方式，
+    對照的是這個 App 目前真正的程式行為，不是通用範本。
+  </div>
+
+  <h2>1. 我們不蒐集什麼</h2>
+  <ul>
+    <li><strong>沒有帳號系統</strong>：不需要註冊、不需要登入，App 內部也沒有任何機制可以辨識「使用者是誰」。</li>
+    <li><strong>沒有分析或追蹤工具</strong>：App 沒有整合任何第三方分析、廣告、或行為追蹤 SDK。不會有任何公司從這個 App 取得你的使用紀錄。</li>
+    <li><strong>不會存取裝置定位</strong>：地圖上顯示的是各營地的座標，不是你目前所在的位置；App 沒有請求過裝置的定位權限。</li>
+    <li><strong>不會傳送你的個人資訊到任何伺服器</strong>：App 沒有任何表單、輸入欄位、或上傳功能會把你的資料送出裝置。</li>
+  </ul>
+
+  <h2>2. App 唯一的網路行為：更新公開營地資料</h2>
+  <p>
+    App 內建 1,807 家露營場的完整資料。啟動時，App 會嘗試連線
+    <code>https://raw.githubusercontent.com/jkmac6688/camp-tw-data</code>
+    下載可能更新的資料檔（<code>manifest.json</code>、<code>camps.json</code>）——
+    這兩個檔案是交通部觀光署「全台露營場資料」（政府資料開放平臺資料集 132066）
+    經整理後的公開版本，內容只有營地資訊，不含任何使用者資料。
+  </p>
+  <p>
+    這次連線不會夾帶任何可識別你身分的資訊，只是單純下載一份公開檔案。
+    若下載失敗（例如沒有網路、山區收訊不佳），App 會靜默改用裝置內建的資料，
+    不會顯示錯誤、也不會影響其他功能——這是設計上的行為，不是例外狀況。
+  </p>
+
+  <h2>3. 收藏清單只存在你的裝置上</h2>
+  <p>
+    你收藏的營地清單透過 iOS 系統的 <code>UserDefaults</code> 存在裝置本機，
+    不會上傳到任何伺服器，也不會被用來識別你或串連你的其他使用紀錄。
+    移除 App 就會一併清除這份清單。
+  </p>
+
+  <h2>4. App 內購買（打賞）</h2>
+  <p>
+    App 提供選擇性的「打賞」內購項目，讓覺得這個 App 有幫助的使用者可以支持開發者。
+    這個功能完全免費使用不受影響——不打賞不影響任何既有功能。
+    購買金流由 Apple 的 App Store／StoreKit 全程處理，我們不會看到、也不會取得你的
+    卡號或付款資訊；這是 Apple 平台本身的標準行為，不是這個 App 額外蒐集的資料。
+  </p>
+
+  <h2>5. 資料來源與授權聲明</h2>
+  <p>
+    資料來源：交通部觀光署「全台露營場資料」，依政府資料開放授權條款第 1 版使用。
+    本應用程式非政府官方軟體，實際合法性狀態請以主管機關最新公告為準：
+    <a href="https://camp.tad.gov.tw/CMZ/legal.jsp" target="_blank" rel="noopener">交通部觀光署官方查詢</a>。
+  </p>
+
+  <h2>6. 兒童使用</h2>
+  <p>
+    這個 App 沒有任何使用者輸入個人資料的欄位，也沒有年齡分級限制，
+    上述「不蒐集任何個人資料」的原則對所有年齡層的使用者一體適用。
+  </p>
+
+  <h2>7. 政策異動</h2>
+  <p>
+    如果這份政策的內容有變動，會直接更新這個頁面，並更新上方的「最後更新」日期。
+  </p>
+
+  <h2>8. 聯絡我們</h2>
+  <p>
+    若對這份隱私權政策有任何疑問，歡迎透過 email 與開發者聯繫：
+    <a href="mailto:jk200e@gmail.com">jk200e@gmail.com</a>。
+  </p>
+
+  <footer>
+    露營安心查（CampSafe）· <a href="https://github.com/jkmac6688/camp-tw-data">camp-tw-data</a> ·
+    <a href="./support.html">支援</a>
+  </footer>
+</main>
+</body>
+</html>
