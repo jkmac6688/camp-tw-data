@@ -1,9 +1,9 @@
 {
  "count": 1807,
- "generatedAt": "2026-08-08T09:08:07+08:00",
- "sha256": "f5377be02379f29919a33f3042a87ef76ac02ae51babdaa6c116c341e43e8f16",
+ "generatedAt": "2026-08-08T09:12:46+08:00",
+ "sha256": "999ce3e574c5176251500a6fdb957d0159a31bedeaf7d1915ab233a7c98d3b39",
  "sourceCsvSha256": "9071e44dbc1fbd1a79edbbf033cd6672278ec673a9aea480c81042e00ba60306",
  "sourceUpdatedAt": "2025-05-02",
  "url": "https://raw.githubusercontent.com/jkmac6688/camp-tw-data/main/camps.json",
- "version": 18
+ "version": 19
 }
